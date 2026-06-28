@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "PRO",
+    "slug": "pro-product-rating",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D0D0D"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D0D0D"
+      },
+      "package": "com.pro.productrating",
+      "versionCode": 1,
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image-picker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "PRO needs access to your photos to add product images.",
+          "cameraPermission": "PRO needs access to your camera to take product photos."
+        }
+      ]
+    ],
+    "scheme": "pro",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
